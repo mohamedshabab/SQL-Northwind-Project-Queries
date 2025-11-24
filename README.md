@@ -265,7 +265,5 @@ This repository includes the SQL scripts used for the Northwind exercises:
 
 1. Open MySQL Workbench / pgAdmin / SQL Server / Azure Data Studio  
 2. Load the database:
-
+  ```sql
    SOURCE northwind_create.sql;
-
-

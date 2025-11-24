@@ -59,7 +59,8 @@ The purpose of this SQL project is to build confidence working with structured d
 Throughout this project, I strengthened my SQL fundamentals while exploring the Northwind dataset.
 
 ### 📌 Core SQL Concepts
-- `SELECT` for column retrieval  
+- `SELECT` for column retrieval
+- `FROM` specify the table to query
 - `WHERE` for filtering rows  
 - `ORDER BY` for sorting  
 - `LIMIT` for restricting results  

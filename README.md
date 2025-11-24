@@ -7,179 +7,94 @@ The goal of this project is to demonstrate practical SQL skills used in data ana
 
 -----
 
-## 📁 Database Overview
+## 📁 Dataset Overview
 
-This project uses the classic **Northwind** database, which models a wholesale trading company.  
-The dataset includes customers, employees, suppliers, products, and order processing tables.
+This project is based on the **Northwind Database**, a well-known relational dataset modeling a wholesale trading company.  
+The database includes customers, orders, products, employees, suppliers, and sales territories.  
+I used it to practice SQL querying and explore real business scenarios.
 
-### 🧱 Main Tables in the Northwind Database  
-(All table names are italicized using backticks)
+### 📦 Key Tables Used
 
-- ***`Customers`*** – customer names, contact info, location  
-- ***`Employees`*** – staff roles, reporting structure  
-- ***`Suppliers`*** – product suppliers and their details  
-- ***`Products`*** – product names, prices, stock  
-- ***`Categories`*** – product groupings  
-- ***`Orders`*** – order header information  
-- ***`Order_Details`*** – order line items  
-- ***`Shippers`*** – shipping companies  
-- ***`Territories`*** / ***`Regions`*** – geographic mapping  
+- 👥 **`Customers`** — customer information and locations  
+- 🛍️ **`Orders`** — order dates and customer/employee references  
+- 📦 **`Order_Details`** — quantities, discounts, and line-item pricing  
+- 🏭 **`Products`** — product names, categories, suppliers  
+- 🧑‍💼 **`Employees`** — staff information and territories  
+- 🚚 **`Suppliers`** — supplier company details  
+- 🌍 **`Territories` / `Regions`** — geographic sales assignments  
 
 ### 📄 Files Used
 
-- **Northwind Database Basic Queries.sql**  
-- **Northwind Classwork Joins and Group By.sql**  
-- **Northwind Database Create.sql**  
-- Workbook tasks (Day 2 & Day 3)
+- *Northwind Database Basic Queries.sql*  
+- *Northwind Classwork – Joins & Group By.sql*  
+- *Northwind Database Create.sql*  
+- Selected tasks from the **Week 3 Workbook** (Day 2 – Task 1, Day 3 – Task 2)
 
-These files contain all SQL code used in this project.
+These files contain all SQL code executed for this project.
 
 ----
 
 ## 🎯 Project Objectives
 
-The goal of this SQL project is to practice real-world data querying using the **Northwind** relational database.  
-The exercises cover core SQL skills including filtering, sorting, grouping, joining tables, and writing multi-step analytical queries.
+The purpose of this SQL project is to build confidence working with structured datasets by writing practical queries across multiple related tables.
 
 ### **Key Objectives**
-- Write queries to explore customers, orders, employees, products, and suppliers  
-- Practice SQL fundamentals (SELECT, WHERE, ORDER BY, LIMIT)  
-- Use **JOINs** to combine data across multiple tables  
-- Apply **GROUP BY** and **aggregate functions** to summarize sales and inventory  
-- Write queries using **HAVING**, **DISTINCT**, and **string filtering**  
-- Solve analytical tasks from the *Day 2* and *Day 3* Northwind workbook exercises  
-- Include screenshot examples in the README to demonstrate SQL results  
-
-The project is designed to simulate tasks given to real data technicians or analysts working with relational databases.
-
-----
-## 🎯 Project Objectives
-
-The goal of this SQL project is to practice core database querying skills using the **Northwind** dataset.  
-The exercises focus on understanding relational data and writing practical SQL queries used in real business analytics.
-
-### **Key Objectives**
-- Understand the structure of the Northwind database (tables, relationships, primary/foreign keys)
-- Use **SELECT** to retrieve specific columns from tables
-- Use **FROM** to specify data sources
-- Filter records with **WHERE**
-- Sort results with **ORDER BY**
-- Limit output using **LIMIT**
-- Combine tables using **INNER JOIN** and **LEFT JOIN**
-- Aggregate data using **GROUP BY** with functions like:
-  - **COUNT()**
-  - **SUM()**
-  - **AVG()**
-  - **MIN()**
-  - **MAX()**
-- Query real business data such as:
-  - bestselling products  
+- Understand the structure of the Northwind relational schema  
+- Retrieve data using `SELECT` and `FROM`  
+- Filter records using `WHERE`  
+- Sort results with `ORDER BY`  
+- Limit output using `LIMIT`  
+- Join tables using `INNER JOIN` and `LEFT JOIN`  
+- Summarize data using `GROUP BY` and aggregate functions  
+- Analyze real business scenarios:
+  - top-selling products  
   - customer order history  
-  - supplier inventory  
-  - employee–territory relationships
-- Practice writing clean, readable, and efficient SQL queries
-
----
-
-## 📁 Dataset Overview
-
-This project is built using the **Northwind Database**, a classic relational dataset that contains information about customers, orders, products, employees, suppliers, and logistics operations.
-
-You worked with three SQL task files from the training materials:
-
-- **Northwind Database Basic Queries.sql**  
-- **Northwind Classwork – Joins & Group By.sql**  
-- **Northwind Database Create.sql** (schema reference)
-
-You also used selected tasks from the workbook:
-- **Northwind Day 2 – Task 1**  
-- **Northwind Day 3 – Task 2**
-
-Together, these exercises cover essential SQL topics using real-world business data.
-
-### 📦 Key Tables in the Northwind Database
-
-#### 👥 Customers  
-Contains customer details such as company name, contact info, city, and country.
-
-#### 🛍️ Orders  
-Includes order dates, shipping details, employee handling, and customer linkage.
-
-#### 📦 Order Details  
-Line-level items showing product, quantity, price, and discount for each order.
-
-#### 🏭 Products  
-Contains product names, categories, suppliers, and stock information.
-
-#### 🧑‍💼 Employees  
-Stores employee names, roles, reporting structure, and territory assignments.
-
-#### 🚚 Suppliers  
-Information about suppliers providing products to the business.
-
-#### 🌍 Territories & Regions  
-Geographical categorization used for employee sales areas.
-
-### 📄 Files Used in This Project
-
-- `/mnt/data/Northwind Database Basic Queries.sql`
-- `/mnt/data/Northwind Classwork Joins and Group By.sql`
-- `/mnt/data/Northwind Database create (1).sql`
-- Selected tasks from:  
-  `/mnt/data/Data_Technician_Workbook_Week_3 Workbench use.docx`
-
-These files were used to run and practice SQL queries throughout the project.
+  - supplier-product relationships  
+  - employee territory coverage 
 
 ---
 
 ## 🛠️ SQL Skills Practiced
 
-Throughout this project, you worked with the Northwind database to build confidence in real SQL query writing.  
-The exercises covered essential SQL techniques used in everyday data analytics.
+Throughout this project, I strengthened my SQL fundamentals while exploring the Northwind dataset.
 
 ### 📌 Core SQL Concepts
-- Selecting specific columns using **`SELECT`**
-- Filtering rows using **`WHERE`**
-- Sorting results with **`ORDER BY`**
-- Limiting records using **`LIMIT`** (or database equivalent)
+- `SELECT` for column retrieval  
+- `WHERE` for filtering rows  
+- `ORDER BY` for sorting  
+- `LIMIT` for restricting results  
 
-### 🔗 Joins & Relationships
+### 🔗 Joins & Table Relationships
 Worked extensively with multi-table queries using:
-- **`INNER JOIN`** – combining matching rows across tables  
-- **`LEFT JOIN`** – returning all rows from a primary table  
-- Joining tables such as:
-  - `Customers` ↔ `Orders`  
-  - `Orders` ↔ `Order_Details`  
-  - `Products` ↔ `Suppliers`  
-  - `Employees` ↔ `Territories`
+- `INNER JOIN`  
+- `LEFT JOIN`
+
+Connecting tables such as:
+- `Customers` → `Orders`  
+- `Orders` → `Order_Details`  
+- `Products` → `Suppliers`  
+- `Employees` → `Territories`  
 
 ### 🔢 Grouping & Aggregation
-Performed grouped analytical queries using:
-- **`GROUP BY`**
-- **`COUNT()`**
-- **`SUM()`**
-- **`AVG()`**
-- **`MIN()` / `MAX()`**
+Used:
+- `GROUP BY`  
+- `SUM()`  
+- `COUNT()`  
+- `AVG()`  
+- `MIN()` / `MAX()`
 
-Used these to answer questions such as:
-- Number of orders per customer  
-- Total quantity ordered by product  
-- Average unit price  
-- Orders grouped by country  
+To answer real analytical questions, including:
+- total orders per country  
+- quantities sold per product  
+- average pricing  
+- category-specific product listings  
 
-### 🧱 Database Structure Exploration
-From the schema file, you reviewed:
-- Table creation SQL  
-- Primary and foreign keys  
-- Relationships between customers, orders, employees, and products
-
-### 📝 Practical Exercises from Workbook
-Included selected tasks from:
-- **Day 2 – Task 1** (joins, grouping, totals)  
-- **Day 3 – Task 2** (multi-table queries, sorting, filtering)
-
-These exercises simulate real analyst questions applied to the Northwind dataset.
-
+### 🧱 Schema Understanding
+Reviewed:
+- table creation  
+- primary & foreign keys  
+- relationships across the Northwind structure
+- 
 ----
 
 ## 🔍 Analysis Highlights
